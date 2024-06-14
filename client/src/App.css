@@ -1,0 +1,35 @@
+.wrapper {
+    background: black;
+    padding-top: calc(var(--mantine-spacing-xl) / 2);
+    padding-bottom: calc(var(--mantine-spacing-xl) / 2);
+    /* border: solid 1px red; */
+    margin-bottom: 5px;
+
+  }
+.title {
+    font-family:
+      Greycliff CF,
+      var(--mantine-font-family);
+    font-weight: 900;
+    margin-bottom: var(--mantine-spacing-md);
+    text-align: center;
+
+  }
+  .description-text {
+    width: 200px;
+  }
+.news-app {
+    display: flex;
+    justify-content: center;
+}
+
+.news-item {
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.news-img {
+    width: 150px;
+}
