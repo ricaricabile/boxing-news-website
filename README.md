@@ -1,6 +1,6 @@
 # boxing-news-website
 
-This application calculates the latest boxing news using this api > https://newsapi.org/
+This application fetches the latest boxing news using this api > https://newsapi.org/
 The frontend used in this application is React JS and for the Backend Node JS with express js framework. This application uses React-Redux for state management. This application is partially running on Heroku see link > https://boxing-news-website-live-eb4bad6591ca.herokuapp.com/.
 
 the app is only partially running there. heroku restricts other routes from being rendered. 
