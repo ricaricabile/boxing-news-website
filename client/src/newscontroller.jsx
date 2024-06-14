@@ -22,7 +22,7 @@ class NewsController extends React.Component {
     super();
   }
   componentDidMount = async () => {
-      const responseServer = await axios.get("fetchnewsorgdata");
+      const responseServer = await axios.get("/fetchnewsorgdata");
       this.props.setArticles(responseServer.data.articles);
   };
 

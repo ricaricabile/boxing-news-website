@@ -1,10 +1,19 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { ThemeIcon, Text, Title, Container, SimpleGrid, rem, Group } from '@mantine/core';
 import classes from './newsdetails.css';
+import { setArticles } from './redux/app/app.actions.js';
+import axios from 'axios';
 
-function NewsDetails({articles}) {
+function NewsDetails({articles, setArticles}) {
+  useEffect(() => {
+   const getarticles = async () => {
+    const responseServer = await axios.get("/fetchnewsorgdata");
+    setArticles(responseServer.data.articles);
+    }
+    getarticles();
+  }, []);
 let {id}= useParams();
   return (<div className="background-details-news" style={{height: window.innerHeight}}>
     
@@ -39,4 +48,7 @@ let {id}= useParams();
 const mapStateToProps = state => ({
     articles: state.app.articles
   });
-export default connect(mapStateToProps)(NewsDetails);
+const mapDispatchToProps = dispatch => ({
+    setArticles: articles => dispatch(setArticles(articles)),
+  })
+export default connect(mapStateToProps, mapDispatchToProps)(NewsDetails);
