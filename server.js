@@ -24,7 +24,7 @@ app.listen(port, error => {
     console.log('Server running on port '+ port);
 });
 app.get('/fetchnewsorgdata', async (req, res) => {
-    const result = await axios.get(`https://newsapi.org/v2/everything?q=boxing&apiKey=${process.env.NEWS_API_ORG_KEY}`);
+    const result = await axios.get('https://newsapi.org/v2/everything?q=boxing&apiKey=b0965c3678eb4d13806f4052de51bb30');
     res.status(200).send(result.data);
 });
 
