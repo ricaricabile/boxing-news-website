@@ -23,3 +23,10 @@ you should see files
 server.js etc.**
 from here enter
 **npm run dev**
+
+
+The application is on the master branch 
+enter this command in your command line
+**git checkout master**
+
+also change branch from main to master
