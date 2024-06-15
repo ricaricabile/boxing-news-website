@@ -1,13 +1,8 @@
 # boxing-news-website
 
 This application fetches the latest boxing news using this api > https://newsapi.org/
-The frontend used in this application is React JS and for the Backend Node JS with express js framework. This application uses React-Redux for state management. This application is partially running on Heroku see link > https://boxing-news-website-live-eb4bad6591ca.herokuapp.com/.
-
-the app is only partially running there. heroku restricts other routes from being rendered i think theres an additional payment for that. **im short on cash at this moment you can donate if you want send me a message here on github haha**
-
-to fully see the application you need to run this project locally please clone the project in your local
-
-then go to the root directory of the project you should see files
+The frontend used in this application is React JS and for the Backend Node JS with express js framework. This application uses React-Redux for state management. This application is running on Heroku see link > https://boxing-news-website-live-eb4bad6591ca.herokuapp.com/.
+to run application locally go to 
 **client
 server.js etc.**
 enter
@@ -28,5 +23,3 @@ from here enter
 The application is on the master branch 
 enter this command in your command line
 **git checkout master**
-
-also change branch from main to master
