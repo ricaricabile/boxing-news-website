@@ -8,6 +8,7 @@ import {
 import { ThemeIcon, Text, Title, Container, SimpleGrid, rem } from '@mantine/core';
 import { connect } from 'react-redux';
 import { setArticles } from './redux/app/app.actions.js';
+import { Link } from "react-router-dom";
 
 const hiddenDiv = {
   display: 'flex', 
@@ -47,13 +48,13 @@ class NewsController extends React.Component {
       >
             {this.props.articles &&
                 this.props.articles.map( (article, i) =>  
-                    <a href={`/details/${i}`} className='news-app' 
+                    <Link to={`/details/${i}`} className='news-app' 
                          >
                         <div className='news-item'>
                         <img className='news-img' src={article.urlToImage} alt={article.urlToImage} ></img>
                         <h3><a href="javascript:void(0);" onclick="func(0)" > {article.title}</a></h3>
                         </div>
-                    </a>
+                    </Link>
                 )}
                 </SimpleGrid>
           {this.props.articles.length == 0 && 
