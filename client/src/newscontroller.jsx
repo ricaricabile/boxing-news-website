@@ -47,14 +47,13 @@ class NewsController extends React.Component {
       >
             {this.props.articles &&
                 this.props.articles.map( (article, i) =>  
-                    <div className='news-app' onClick={() => {if (typeof window !== 'undefined') {
-                        window.location.href = `/details/${i}`;
-                        }}} >
+                    <a href={`/details/${i}`} className='news-app' 
+                         >
                         <div className='news-item'>
                         <img className='news-img' src={article.urlToImage} alt={article.urlToImage} ></img>
                         <h3><a href="javascript:void(0);" onclick="func(0)" > {article.title}</a></h3>
                         </div>
-                    </div>
+                    </a>
                 )}
                 </SimpleGrid>
           {this.props.articles.length == 0 && 

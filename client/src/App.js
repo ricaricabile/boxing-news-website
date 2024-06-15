@@ -10,7 +10,6 @@ function App() {
       <Routes>
         <Route exact path='/' element={<NewsController/>} />
         <Route path='/details/:id' element={<NewsDetails/>} />
-        <Route path='/ricaricabile' element={'hell'} />
       </Routes >
       <Footer/>
     </div>
