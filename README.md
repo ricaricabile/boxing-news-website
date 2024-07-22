@@ -6,14 +6,13 @@ To run application locally go to
 **Root Folder**
 enter
 **npm install**
-next go the the client folder
+next go to the client folder
 and enter
 **npm install**
 wait for each npm commands to finish installing 
 then go back to the root Folder
 then enter
 **npm run dev**
-
 
 The application is on the master branch 
 enter this command in your command line
