@@ -3,8 +3,7 @@
 This application fetches the latest boxing news using this api > https://newsapi.org/
 The frontend used in this application is React JS and for the Backend Node JS with express js framework. 
 to run application locally go to 
-**client
-server.js etc.**
+**Root Folder**
 enter
 **npm install**
 next go the the client folder
